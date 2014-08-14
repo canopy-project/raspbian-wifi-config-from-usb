@@ -7,9 +7,17 @@ configuration file on a USB stick.
 Instructions
 =============================
 
-On your Raspberry Pi (running Raspbian):
+Follow these instructions on your Raspberry Pi that is running Raspbian.
+
+It is recommended to first backup your existing network configuration.
+
+    sudo cp /etc/network/interfaces /etc/network/interfaces.backup
+
+This utility requires USB drive automounting:
 
     sudo apt-get install usbmount
+
+Now build and install the program:
 
     git clone https://github.com/canopy-project/raspbian-wifi-config-from-usb.git
     cd raspbian-wifi-config-from-usb
